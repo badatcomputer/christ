@@ -2,4 +2,6 @@
 
 require 'christ'
 
-puts Christ.new
+gist = Christ::Gist.new
+
+gist.create_gist
