@@ -22,7 +22,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Set your Git oauth token as a environmnet variable.
+
+Learn to here:
+https://help.github.com/articles/creating-an-access-token-for-command-line-use/
+
+It only needs Gist access
+
+```
+export OCTOKIT_ACCESS_TOKEN='000000000000'
+```
+
+then you pipe andy out put like so:
+
+date | christ
 
 ## Development
 
