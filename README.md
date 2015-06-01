@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/shannonrdunn/christ.svg?branch=master)](https://travis-ci.org/shannonrdunn/christ)
+
 # Christ
 
 Pipe any output on the CLI and Christ will create a private GIST for it.
