@@ -4,4 +4,4 @@ require 'christ'
 
 gist = Christ::Gist.new
 
-gist.initialization
+gist.initialize

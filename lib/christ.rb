@@ -2,7 +2,7 @@ require "christ/version"
 require "octokit"
 module Christ
   class Gist
-    def initialization
+    def initialize
       file_content = ARGF.read
       file_name = ARGF.filename
       url = gist_url(file_content, file_name)
