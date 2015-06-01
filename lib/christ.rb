@@ -2,13 +2,22 @@ require "christ/version"
 require "octokit"
 module Christ
   class Gist
-    def create_gist
-      client = Octokit::Client.new
-      input = {ARGF.filename => {content: ARGF.read}}
-      array = []
-      array.push(input)
-      url = client.create_gist({files: input})
-      puts "👼" + "  " + url[:html_url]
+    def initialization
+      file_content = ARGF.read
+      file_name = ARGF.filename
+      url = gist_url(file_content, file_name)
+      puts "👼" + "  " + url
     end
+
+    def github_connect
+        Octokit::Client.new
+    end
+
+    def gist_url(file_content, file_name)
+      content = Hash[file_name => Hash[content: file_content]]
+      url = github_connect.create_gist({files: content})
+      return url[:html_url]
+    end
+
   end
 end
