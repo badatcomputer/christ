@@ -1,8 +1,8 @@
 # Christ
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/christ`. To experiment with that code, run `bin/console` for an interactive prompt.
+Pipe any output on the CLI and Christ will create a private GIST for it.
 
-TODO: Delete this and the text above, and describe your gem
+
 
 ## Installation
 
@@ -22,20 +22,16 @@ Or install it yourself as:
 
 ## Usage
 
-Set your Git oauth token as a environmnet variable.
-
-Learn to here:
+Pipe any output to christ
+```
+ifconfig | christ
+```
+To create a gist tied to your github:
 https://help.github.com/articles/creating-an-access-token-for-command-line-use/
-
-It only needs Gist access
 
 ```
 export OCTOKIT_ACCESS_TOKEN='000000000000'
 ```
-
-then you pipe andy out put like so:
-
-date | christ
 
 ## Development
 
